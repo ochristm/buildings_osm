@@ -40,4 +40,5 @@ __________________________________________________
 
 (proj4 и rasterio устанавливать через):
 * conda install -c conda-forge proj4
+* попробуй без rasterio сначала:
 * conda install -c conda-forge rasterio
