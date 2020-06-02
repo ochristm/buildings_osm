@@ -61,7 +61,7 @@ def parse_osm_data(rel_id):
 			build=False, responseformat="json")
 	#
 	dict_bbox = resp["elements"][0]["bounds"]
-	poly_osmid = str(resp['elements'][0]['id'])
+	poly_osmid = str(rel_id)
 
 	#########################
 
