@@ -234,7 +234,7 @@ print(url_new)
 print("Файл скачивается, подождите...")
 # с помощью wget можно скачивать большие объемы, например, области
 try:
-    filename = wget.download(url_new, out='{}\\map_{}_{}_{}.osm'.format(path_raw_osm,buff_km, place, str_date))
+    filename = wget.download(url_new, out='{}\\map_{}_{}_{}.osm'.format(path_raw_osm,buff_km, place, str_date), bar=None)
 except:
     print("HTTP Error 429: Too Many Requests")
     print("Try again later, and go:")
