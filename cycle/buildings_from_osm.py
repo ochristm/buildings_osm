@@ -119,7 +119,7 @@ def parse_osm_data(rel_id):
 				  +str(new_maxlat))
 	#
 	# с помощью wget можно скачивать большие объемы, например, области
-	filename = wget.download(url_new, out='{}\\map_{}_{}.osm'.format(path_raw_osm, rel_id, str_date))
+	filename = wget.download(url_new, out='{}\\map_{}_{}.osm'.format(path_raw_osm, rel_id, str_date), bar=None)
 	return filename
 #
 
